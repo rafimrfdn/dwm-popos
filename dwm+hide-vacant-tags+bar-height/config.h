@@ -74,7 +74,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "kitty", NULL };
 
 /* powermenu */
-static const char *powermenu[] = { "/home/debian/.scripts/powermenu.sh", NULL };
+static const char *powermenu[] = { "/home/pop/.scripts/powermenu.sh", NULL };
 
 #include <X11/XF86keysym.h>
 
@@ -136,8 +136,8 @@ static Key keys[] = {
     { MODKEY|ShiftMask, XK_d, spawn, SHCMD("rofi -show") },
 
     // File explorer
-    //{ MODKEY, XK_e, spawn, SHCMD("pcmanfm") },
-    { MODKEY, XK_e, spawn, SHCMD("thunar") },
+    { MODKEY, XK_e, spawn, SHCMD("pcmanfm") },
+    //{ MODKEY, XK_e, spawn, SHCMD("thunar") },
 
     // Browser
     { MODKEY, XK_w, spawn, SHCMD("firefox") },
